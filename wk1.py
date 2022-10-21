@@ -1,10 +1,10 @@
-#Ky Fike, 27 Aug 2022
+## Ky Fike, 27 Aug 2022
 
-#p1
+# p1
 name=input('What is your name? ')
 print('Hello, %s'%name)
 
-#p2
+# p2
 num = int(input('Enter a number: '))
 print(type(num))
 
