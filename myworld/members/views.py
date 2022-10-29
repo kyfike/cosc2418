@@ -1,6 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
+
 from .models import Members
 
 def index(request):
@@ -20,4 +21,9 @@ def addrecord(request):
   y = request.POST['last']
   member = Members(firstname=x, lastname=y)
   member.save()
+  return HttpResponseRedirect(reverse('index'))
+
+def delete(request, id):
+  member = Members.objects.get(id=id)
+  member.delete()
   return HttpResponseRedirect(reverse('index'))
