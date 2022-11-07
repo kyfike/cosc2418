@@ -1,3 +1,17 @@
+.professionals_for_hire th {
+    text-align: left;
+    padding-right: 1em;
+}
+
+.message_list th,td {
+    text-align: left;
+    padding-right: 15px;
+}
+
+input[name=message] {
+    width: 80%;
+}
+
 .message {
     font-weight: 600;
     color: blue;
