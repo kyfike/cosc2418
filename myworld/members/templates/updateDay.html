@@ -1,0 +1,11 @@
+<h1>Update Date</h1>
+
+<form action="updaterecordDay/{{ create.id }}" method="post">
+{% csrf_token %}
+Day:<br>
+<input name="d" value="{{ create.day }}">
+<br>
+<p style='color:rgba(128,128,128,.5);'>(*You must use the following format: yyyy-mm-dd*)</p>
+<br><br>
+<input type="submit" value="Submit">
+</form>

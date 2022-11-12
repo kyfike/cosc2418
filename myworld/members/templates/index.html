@@ -14,9 +14,26 @@
 </tr>
 {% endfor %}
 </table>
-</body>
-</html>
 
 <p>
 <a href="add/">Add member</a>
 </p>
+
+<h1>Dates</h1>
+
+<table border="1">
+{% for x in create %}
+<tr>
+<td><a href="updateDay/{{ x.id }}">update</a></td>
+<td>{{ x.day }}</td>
+<td><a href="deleteDay/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+    <a href="addDay/">Add member</a>
+    </p>
+
+</body>
+</html>

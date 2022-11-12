@@ -1,0 +1,11 @@
+<h1>Add Day</h1>
+
+<form action="addrecordDay/" method="post">
+{% csrf_token %}
+Date:<br>
+<input name="day">
+<br>
+<p style='color:rgba(128,128,128,.5);'>(*You must use the following format: yyyy-mm-dd*)</p>
+<br><br>
+<input type="submit" value="Submit">
+</form>
